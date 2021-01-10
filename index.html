@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Malachi Constant - Band Website</title>
+
+  <!-- Change these Google fonts with your own choice -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway,wght@1,300&family=Roboto,wght@1,300&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Banner section -->
+  <div class = "banner">
+    <a href="index.html">
+    <img src="images/Malachi-Constant.PNG" alt="Malachi Constant" class="image-centre">
+    </a>
+  </div>
+
+  <!-- Menu section -->
+  <div class = "menu text-centre">
+    <ul class = "menu-text">
+      <li>
+        <a href="index.html" title="">News</a>
+      </li>
+      <li>
+        <a href="tour.html" title="">Tour</a>
+      </li>
+      <li>
+        <a href="music.html" title="">Music</a>
+      </li>
+      <li>
+        <a href="merch.html" title="">Merch</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class = "text-centre">
+    <h1>News</h1>
+  </div>
+
+  <!-- Cards/news items section -->
+  <div class="container">
+    <div class = cards>
+      <div class = "text-centre card-white cards">
+        <h2>New album out now</h2>
+        <a href="music.html">
+          <img src="images/Album.jpg" alt="New Album" class="">
+        </a>
+        <p>Our new self titled album is out now!</p>
+        <a href="music.html">Listen on Spotify</a>
+      </div>
+
+      <div class = "text-centre card-white cards">
+        <h2>UK headline tour announced</h2>
+        <a href="tour.html">
+          <img src="images/band-on-stage.jpg" alt="On Tour" class="">
+        </a>
+        <p>New UK headline tour just announced! Tickets and info below</p>
+        <a href="tour.html">Tickets</a>
+      </div>
+
+      <div class = " card-white cards">
+        <h2>New merch</h2>
+        <a href="merch.html">
+          <img src="images/t-shirt.png" alt="New merch" class="">
+        </a>
+        <p>New t-shirts, vinyl, and posters in our merch store now</p>
+        <a href="merch.html">Merch</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email input section -->
+
+  <script>
+    function address_submit()
+    {
+      let address = document.querySelector("#address").value;
+      if (address === '')
+      {
+        alert("Please enter a valid email address to be subscribed to our mailing list.");
+      }
+      else 
+      {
+        alert("You have been subscribed to our mailing list, thank you!");
+      }
+    }
+  </script>
+
+  <div class = "email-text">
+    <form onsubmit="address_submit()">
+      <p>Find out when MALACHI CONSTANT is playing near you! </p>
+      <p>Be the first to find out about tour dates, new merch, and special announcements!</p>
+      <input type = "text" id = "address" placeholder="Email Address">
+      <input type = "submit">
+    </form>
+    <br>
+  </div>
+
+  <!-- Footer section -->
+  <div class = "footer">
+ 	  <p>Website made by me :)</p>
+  </div>
+
+</body>
+</html>

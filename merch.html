@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Malachi Constant - Band Website</title>
+
+  <!-- Change these Google fonts with your own choice -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway,wght@1,300&family=Roboto,wght@1,300&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Banner section -->
+  <div class = "banner">
+    <a href="index.html">
+    <img src="images/Malachi-Constant.PNG" alt="Malachi Constant" class="image-centre">
+    </a>
+  </div>
+
+  <!-- Menu section -->
+  <div class = "menu text-centre">
+    <ul class = "menu-text">
+      <li>
+        <a href="index.html" title="">News</a>
+      </li>
+      <li>
+        <a href="tour.html" title="">Tour</a>
+      </li>
+      <li>
+        <a href="music.html" title="">Music</a>
+      </li>
+      <li>
+        <a href="merch.html" title="">Merch</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class = "text-centre">
+    <h1>Merch</h1>
+  </div>
+
+  <!-- Cards/news items section -->
+  <div class="container">
+    <div class = cards>
+      <div class = "text-centre">
+        <h2>New tour merch </h2>
+        <p>New t-shirts, vinyl, and posters in our merch store now</p>
+        <a href="https://bandmerch.com/">
+          <img src="images/t-shirt.png" alt="New merch" id ="merch">
+        </a>
+        <p>2017 Tour T-Shirt</p>
+        <a href="https://bandmerch.com/">£10.00</a>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <!-- Email input section -->
+
+  <script>
+    function address_submit()
+    {
+      let address = document.querySelector("#address").value;
+      if (address === '')
+      {
+        alert("Please enter a valid email address to be subscribed to our mailing list.");
+      }
+      else 
+      {
+        alert("You have been subscribed to our mailing list, thank you!");
+      }
+    }
+  </script>
+
+  <div class = "email-text">
+    <form onsubmit="address_submit()">
+      <p>Find out when MALACHI CONSTANT is playing near you! </p>
+      <p>Be the first to find out about tour dates, new merch, and special announcements!</p>
+      <input type = "text" id = "address" placeholder="Email Address">
+      <input type = "submit">
+    </form>
+    <br>
+  </div>
+
+  <!-- Footer section -->
+  <div class = "footer">
+ 	  <p>Website made by me :)</p>
+  </div>
+
+</body>
+</html>
